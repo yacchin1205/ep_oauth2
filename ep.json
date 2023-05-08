@@ -4,9 +4,11 @@
       "name": "main",
       "hooks": {
         "authenticate": "ep_oauth2/index.js:authenticate",
+        "authnFailure": "ep_oauth2/index.js:authnFailure",
         "expressConfigure": "ep_oauth2/index.js:expressConfigure",
         "expressCreateServer": "ep_oauth2/index.js:expressCreateServer",
-        "handleMessage": "ep_oauth2/index.js:handleMessage"
+        "handleMessage": "ep_oauth2/index.js:handleMessage",
+        "preAuthorize": "ep_oauth2/index.js:preAuthorize"
       }
     }
   ]
